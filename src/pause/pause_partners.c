@@ -10,6 +10,7 @@
 #include "sprite/npc/WorldWatt.h"
 #include "sprite/npc/WorldSushie.h"
 #include "sprite/npc/WorldLakilester.h"
+#include "sprite/npc/Goombaria.h"
 
 extern s8 gPauseBufferPal1[512];
 extern s8 gPauseBufferImg1[15752];
@@ -26,9 +27,9 @@ void pause_partners_handle_input(MenuPanel* panel);
 void pause_partners_update(MenuPanel* panel);
 void pause_partners_cleanup(MenuPanel* panel);
 
-static HudElemID gPausePartnersHIDs[8];
-static s32 gPausePartnersSpriteIDs[8];
-static s32 gPausePartnersPartnerIdx[8];
+static HudElemID gPausePartnersHIDs[9];
+static s32 gPausePartnersSpriteIDs[9];
+static s32 gPausePartnersPartnerIdx[9];
 static s32 gPausePartnersCurrentPartnerIdx;
 static s32 gPausePartnersSelectedMove;
 static f32 gPausePartnersRotAngle;
@@ -125,6 +126,12 @@ s32 gPausePartnersSpriteAnims[][4] = {
         ANIM_WorldLakilester_Walk,
         ANIM_WorldLakilester_Talk,
         ANIM_LIST_END
+    },
+    {
+        ANIM_Goombaria_Still,
+        ANIM_Goombaria_Walk,
+        ANIM_Goombaria_Talk,
+        ANIM_LIST_END
     }
 };
 
@@ -137,6 +144,7 @@ s32 gPausePartnersPartnerIDs[] = {
     PARTNER_WATT,
     PARTNER_SUSHIE,
     PARTNER_LAKILESTER,
+    PARTNER_GOOMBARIA,
 };
 
 s32 gPausePartnersMessages[] = {
@@ -147,7 +155,8 @@ s32 gPausePartnersMessages[] = {
     MSG_PartnerDesc_Bow_Pause,
     MSG_PartnerDesc_Watt_Pause,
     MSG_PartnerDesc_Sushie_Pause,
-    MSG_PartnerDesc_Lakilester_Pause
+    MSG_PartnerDesc_Lakilester_Pause,
+    MSG_PartnerDesc_Goombaria_Pause
 };
 
 s32 gPausePartnersMoveBase[] = {
@@ -158,12 +167,14 @@ s32 gPausePartnersMoveBase[] = {
     MOVE_SMACK1,
     MOVE_ELECTRO_DASH1,
     MOVE_BELLY_FLOP1,
-    MOVE_SPINY_FLIP1
+    MOVE_SPINY_FLIP1,
+    MOVE_HEADBONK_ALT1,
 };
 
 s8 gPausePartnersGridData[] = {
     4, 5, 6, 7,
-    0, 1, 2, 3
+    0, 1, 2, 3,
+    4
 };
 
 char* gPausePartnersAssetNames[] = {
@@ -175,6 +186,7 @@ char* gPausePartnersAssetNames[] = {
     "party_akari",
     "party_opuku",
     "party_pokopi",
+    "party_kurio",
     "letter_peach"
 };
 

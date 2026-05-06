@@ -12,6 +12,7 @@ extern ActorBlueprint battle_partner_watt;
 extern ActorBlueprint battle_partner_sushie;
 extern ActorBlueprint battle_partner_lakilester;
 extern ActorBlueprint battle_partner_bow;
+extern ActorBlueprint battle_partner_goombaria;
 extern ActorBlueprint battle_partner_twink;
 
 #define BATTLE_PARTNER_ENTRY(name, Y) \
@@ -34,6 +35,6 @@ PartnerDMAData bPartnerDmaTable[] = {
     BATTLE_PARTNER_ENTRY(sushie, 0),
     BATTLE_PARTNER_ENTRY(lakilester, 10),
     BATTLE_PARTNER_ENTRY(bow, 20),
-    {},
+    BATTLE_PARTNER_ENTRY(goombaria, 0),
     BATTLE_PARTNER_ENTRY(twink, 30),
 };

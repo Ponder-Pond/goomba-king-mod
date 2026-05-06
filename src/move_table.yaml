@@ -1663,3 +1663,57 @@
     actionTip: BTL_MSG_ACTION_TIP_MASH_LEFT
     costFP: 5
     costBP: 0
+- HeadbonkAlt1:
+    nameMsg: MSG_PartnerMoveName_Headbonk1
+    fullDescMsg: MSG_PartnerDesc_Goombaria_Pause_Headbonk1
+    shortDescMsg: MSG_PartnerDesc_Goombaria_Battle_Headbonk
+    flags: [ TARGET_FLAG_SELECT_ONE, TARGET_FLAG_80, TARGET_FLAG_JUMP_LIKE, TARGET_FLAG_NOT_BELOW, TARGET_FLAG_ALLOW_TARGET_ONLY, TARGET_FLAG_NO_CEILING ]
+    category: MOVE_TYPE_PARTNER
+    actionTip: BTL_MSG_ACTION_TIP_PRESS_BEFORE_STRIKE
+    costFP: 0
+    costBP: 0
+- HeadbonkAlt2:
+    nameMsg: MSG_PartnerMoveName_Headbonk2
+    fullDescMsg: MSG_PartnerDesc_Goombaria_Pause_Headbonk2
+    shortDescMsg: MSG_PartnerDesc_Goombaria_Battle_Headbonk
+    flags: [ TARGET_FLAG_SELECT_ONE, TARGET_FLAG_80, TARGET_FLAG_JUMP_LIKE, TARGET_FLAG_NOT_BELOW, TARGET_FLAG_ALLOW_TARGET_ONLY, TARGET_FLAG_NO_CEILING ]
+    category: MOVE_TYPE_PARTNER
+    actionTip: BTL_MSG_ACTION_TIP_PRESS_BEFORE_STRIKE
+    costFP: 0
+    costBP: 0
+- HeadbonkAlt3:
+    nameMsg: MSG_PartnerMoveName_Headbonk3
+    fullDescMsg: MSG_PartnerDesc_Goombaria_Pause_Headbonk3
+    shortDescMsg: MSG_PartnerDesc_Goombaria_Battle_Headbonk
+    flags: [ TARGET_FLAG_SELECT_ONE, TARGET_FLAG_80, TARGET_FLAG_JUMP_LIKE, TARGET_FLAG_NOT_BELOW, TARGET_FLAG_ALLOW_TARGET_ONLY, TARGET_FLAG_NO_CEILING ]
+    category: MOVE_TYPE_PARTNER
+    actionTip: BTL_MSG_ACTION_TIP_PRESS_BEFORE_STRIKE
+    costFP: 0
+    costBP: 0
+- TattleAlt:
+    nameMsg: MSG_PartnerMoveName_Tattle
+    fullDescMsg: MSG_PartnerDesc_Goombaria_Pause_Tattle
+    shortDescMsg: MSG_PartnerDesc_Goombaria_Battle_Tattle
+    flags: [ TARGET_FLAG_SELECT_ONE, TARGET_FLAG_2, TARGET_FLAG_PRIMARY_ONLY, TARGET_FLAG_ALLOW_TARGET_ONLY, TARGET_FLAG_TATTLE ]
+    category: MOVE_TYPE_PARTNER
+    actionTip: NONE
+    costFP: 0
+    costBP: 0
+- ChargeAlt:
+    nameMsg: MSG_PartnerMoveName_Charge
+    fullDescMsg: MSG_PartnerDesc_Goombaria_Pause_Charge
+    shortDescMsg: MSG_PartnerDesc_Goombaria_Battle_Charge
+    flags: [ TARGET_FLAG_PARTNER ]
+    category: MOVE_TYPE_PARTNER
+    actionTip: NONE
+    costFP: 1
+    costBP: 0
+- MultibonkAlt:
+    nameMsg: MSG_PartnerMoveName_Multibonk
+    fullDescMsg: MSG_PartnerDesc_Goombaria_Pause_Multibonk
+    shortDescMsg: MSG_PartnerDesc_Goombaria_Battle_Multibonk
+    flags: [ TARGET_FLAG_SELECT_ONE, TARGET_FLAG_80, TARGET_FLAG_JUMP_LIKE, TARGET_FLAG_NOT_BELOW, TARGET_FLAG_ALLOW_TARGET_ONLY, TARGET_FLAG_NO_CEILING ]
+    category: MOVE_TYPE_PARTNER
+    actionTip: BTL_MSG_ACTION_TIP_PRESS_BEFORE_STRIKE
+    costFP: 3
+    costBP: 0

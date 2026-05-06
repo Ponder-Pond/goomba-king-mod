@@ -1,0 +1,18 @@
+<SpriteSheet maxComponents="1" paletteGroups="1">
+    <PaletteList>
+        <Palette id="0" src="Default.png"/>
+    </PaletteList>
+    <RasterList>
+        <Raster id="0" palette="0" src="Still.png"/>
+    </RasterList>
+    <AnimationList>
+        <Animation name="Still">
+            <Component name="Comp_0" xyz="-1,-31,0">
+                <Label name="Start"/>
+                <SetRaster index="0"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+    </AnimationList>
+</SpriteSheet>

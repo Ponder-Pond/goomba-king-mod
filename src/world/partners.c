@@ -71,6 +71,7 @@ extern HudScript HES_Sushie;
 extern HudScript HES_Lakilester;
 extern HudScript HES_Bow;
 extern HudScript HES_PartnerA;
+extern HudScript HES_MenuStarPower;
 extern HudScript HES_Partner0Disabled;
 extern HudScript HES_GoombarioDisabled;
 extern HudScript HES_KooperDisabled;
@@ -81,6 +82,7 @@ extern HudScript HES_SushieDisabled;
 extern HudScript HES_LakilesterDisabled;
 extern HudScript HES_BowDisabled;
 extern HudScript HES_PartnerADisabled;
+extern HudScript HES_MenuStarPowerDisabled;
 
 extern HudScript HES_StatusDigit0;
 extern HudScript HES_StatusDigit1;
@@ -130,13 +132,13 @@ typedef struct UseItemStruct {
 HudScript* wPartnerHudScripts[] = {
     &HES_Partner0, &HES_Goombario, &HES_Kooper, &HES_Bombette,
     &HES_Parakarry, &HES_Partner0, &HES_Watt, &HES_Sushie,
-    &HES_Lakilester, &HES_Bow, &HES_PartnerA, &HES_PartnerA,
+    &HES_Lakilester, &HES_Bow, &HES_MenuStarPower, &HES_PartnerA,
     &HES_PartnerA, &HES_PartnerA, &HES_PartnerA, &HES_PartnerA,
 };
 HudScript* wDisabledPartnerHudScripts[] = {
     &HES_Partner0Disabled, &HES_GoombarioDisabled, &HES_KooperDisabled, &HES_BombetteDisabled,
     &HES_ParakarryDisabled, &HES_Partner0Disabled, &HES_WattDisabled, &HES_SushieDisabled,
-    &HES_LakilesterDisabled, &HES_BowDisabled, &HES_PartnerADisabled, &HES_PartnerADisabled,
+    &HES_LakilesterDisabled, &HES_BowDisabled, &HES_MenuStarPowerDisabled, &HES_PartnerADisabled,
     &HES_PartnerADisabled, &HES_PartnerADisabled, &HES_PartnerADisabled, &HES_PartnerADisabled,
 };
 HudScript* DigitHudScripts[] = {

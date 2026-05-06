@@ -11,6 +11,7 @@
 #include "sprite/npc/BattleWatt.h"
 #include "sprite/npc/BattleSushie.h"
 #include "sprite/npc/BattleLakilester.h"
+#include "sprite/npc/Goombaria.h"
 
 enum {
     // BTL_SUBSTATE_INIT                                = 0,
@@ -95,7 +96,7 @@ AnimID PartnerThinkAnims[] = {
     [PARTNER_SUSHIE]     ANIM_BattleSushie_Think,
     [PARTNER_LAKILESTER] ANIM_BattleLakilester_Run,
     [PARTNER_BOW]        ANIM_BattleBow_Still,
-    [PARTNER_GOOMBARIA]  0,
+    [PARTNER_GOOMBARIA]  ANIM_Goombaria_Idle,
     [PARTNER_TWINK]      0,
 };
 
@@ -109,7 +110,7 @@ AnimID PartnerIdleAnims[] = {
     [PARTNER_SUSHIE]     ANIM_BattleSushie_Walk,
     [PARTNER_LAKILESTER] ANIM_BattleLakilester_Walk,
     [PARTNER_BOW]        ANIM_BattleBow_Walk,
-    [PARTNER_GOOMBARIA]  0,
+    [PARTNER_GOOMBARIA]  ANIM_Goombaria_Walk,
     [PARTNER_TWINK]      0,
 };
 
@@ -172,6 +173,13 @@ IconHudScriptPair PartnerMoveHudScripts[][5] = {
     },
     [PARTNER_BOW] {
         {&HES_Bow, &HES_BowDisabled},
+        {&HES_MoveDiamond, &HES_MoveDiamond_disabled},
+        {&HES_MoveBlueOrb, &HES_MoveBlueOrbDisabled},
+        {&HES_MoveGreenOrb, &HES_MoveGreenOrbDisabled},
+        {&HES_MoveRedOrb, &HES_MoveRedOrbDisabled}
+    },
+    [PARTNER_GOOMBARIA] {
+        {&HES_MenuStarPower, &HES_MenuStarPowerDisabled},
         {&HES_MoveDiamond, &HES_MoveDiamond_disabled},
         {&HES_MoveBlueOrb, &HES_MoveBlueOrbDisabled},
         {&HES_MoveGreenOrb, &HES_MoveGreenOrbDisabled},

@@ -58,17 +58,17 @@ void clear_player_data(void) {
     ShowingCoinCounter = false;
     HidingCoinCounter = false;
 
-    playerData->curHP = 10;
-    playerData->curMaxHP = 10;
-    playerData->hardMaxHP = 10;
-    playerData->curFP = 5;
-    playerData->curMaxFP = 5;
-    playerData->hardMaxFP = 5;
-    playerData->maxBP = 5;
-    playerData->level = 1;
+    playerData->curHP = 15;
+    playerData->curMaxHP = 15;
+    playerData->hardMaxHP = 15;
+    playerData->curFP = 10;
+    playerData->curMaxFP = 10;
+    playerData->hardMaxFP = 10;
+    playerData->maxBP = 6;
+    playerData->level = 3;
     playerData->bootsLevel = 0;
-    playerData->hammerLevel = -1;
-    playerData->hasActionCommands = false;
+    playerData->hammerLevel = 0;
+    playerData->hasActionCommands = true;
     playerData->coins = 0;
     playerData->starPieces = 0;
     playerData->starPoints = 0;
@@ -83,7 +83,7 @@ void clear_player_data(void) {
     playerData->starPower = 0;
     playerData->starBeamLevel = 0;
 
-    playerData->curPartner = PARTNER_NONE;
+    playerData->curPartner = PARTNER_GOOMBARIA;
 
     for (i = 0; i < ARRAY_COUNT(playerData->partners); i++) {
         playerData->partners[i].enabled = false;
@@ -92,6 +92,7 @@ void clear_player_data(void) {
         playerData->partners[i].unk_02[1] = 0;
         playerData->partners[i].unk_02[2] = 0;
     }
+    playerData->partners[PARTNER_GOOMBARIA].enabled = true;
 
     for (i = 0; i < ARRAY_COUNT(playerData->keyItems); i++) {
         playerData->keyItems[i] = ITEM_NONE;

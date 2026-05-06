@@ -1307,6 +1307,17 @@
     stepDelay: [ -5, -5 ]
     tattleCamOffset: [ 0, 0, 0 ]
     shadowOffset: 0
+- Goombaria:
+    level: 0
+    nameMsg: MSG_EnemyName_TheMaster
+    tattleMsg: MSG_EnemyTattle_TheMaster1
+    walkSound: [ SOUND_GOOMBA_STEP, SOUND_GOOMBA_STEP ]
+    flySound: [ SOUND_NONE, SOUND_NONE ]
+    jumpSound: SOUND_ACTOR_JUMP
+    hurtSound: SOUND_ACTOR_HURT
+    stepDelay: [ 30, 30 ]
+    tattleCamOffset: [ 0, 0, 0 ]
+    shadowOffset: 0
 - Twink:
     level: 0
     nameMsg: MSG_Menus_Party_Twink

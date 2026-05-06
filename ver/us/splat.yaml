@@ -6965,6 +6965,13 @@ segments:
     vram_class: battle_partner
     subsegments:
     - [auto, c, bow]
+  - name: battle_partner_goombaria
+    dir: battle/partner
+    type: code
+    start: auto
+    vram_class: battle_partner
+    subsegments:
+    - [auto, c, goombaria]
   - name: battle_partner_twink
     dir: battle/partner
     type: code

@@ -16,6 +16,7 @@
 #include "sprite/npc/BattleSushie.h"
 #include "sprite/npc/BattleLakilester.h"
 #include "sprite/npc/BattleBow.h"
+#include "sprite/npc/Goombaria.h"
 #include "sprite/player.h"
 
 extern HudScript HES_ProjectorBeam;
@@ -191,7 +192,7 @@ s32 D_80284154[] = {
     [PARTNER_SUSHIE]        = ANIM_BattleSushie_Walk,
     [PARTNER_LAKILESTER]    = ANIM_BattleLakilester_Walk,
     [PARTNER_BOW]           = ANIM_BattleBow_Walk,
-    [PARTNER_GOOMBARIA]     = 0,
+    [PARTNER_GOOMBARIA]     = ANIM_Goombaria_Walk,
     [PARTNER_TWINK]         = 0,
 };
 

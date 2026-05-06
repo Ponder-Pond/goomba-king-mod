@@ -1,0 +1,492 @@
+<SpriteSheet maxComponents="3" paletteGroups="1">
+    <PaletteList>
+        <Palette id="0" src="Default.png"/>
+        <Palette id="1" src="Tear.png"/>
+        <Palette id="2" src="Inactive.png"/>
+        <Palette id="3" src="Poisoned.png"/>
+        <Palette id="4" src="Shocked.png"/>
+        <Palette id="5" src="Burnt.png"/>
+    </PaletteList>
+    <RasterList>
+        <Raster id="0" palette="0" src="Step1.png"/>
+        <Raster id="1" palette="0" src="Step2.png"/>
+        <Raster id="2" palette="0" src="Step3.png"/>
+        <Raster id="3" palette="0" src="Hurt.png"/>
+        <Raster id="4" palette="0" src="JumpEyesClosed.png"/>
+        <Raster id="5" palette="0" src="Idle1.png"/>
+        <Raster id="6" palette="0" src="Idle2.png"/>
+        <Raster id="7" palette="0" src="Idle3.png"/>
+        <Raster id="8" palette="0" src="Talk1.png"/>
+        <Raster id="9" palette="0" src="Talk2.png"/>
+        <Raster id="A" palette="0" src="Jump.png"/>
+        <Raster id="B" palette="0" src="Fall.png"/>
+        <Raster id="C" palette="0" src="Celebrate1.png"/>
+        <Raster id="D" palette="0" src="Celebrate2.png"/>
+        <Raster id="E" palette="0" src="LeanOver1.png"/>
+        <Raster id="F" palette="0" src="LeanOver2.png"/>
+        <Raster id="10" palette="0" src="LeanOver3.png"/>
+        <Raster id="11" palette="0" src="Inspect1.png"/>
+        <Raster id="12" palette="0" src="Inspect2.png"/>
+        <Raster id="13" palette="0" src="Blink1.png"/>
+        <Raster id="14" palette="0" src="Blink2.png"/>
+        <Raster id="15" palette="0" src="LookUp1.png"/>
+        <Raster id="16" palette="0" src="LookUp2.png"/>
+        <Raster id="17" palette="0" src="LookUp3.png"/>
+        <Raster id="18" palette="0" src="LookUpTalk1.png"/>
+        <Raster id="19" palette="0" src="SadTalk1.png"/>
+        <Raster id="1A" palette="0" src="SadStep1.png"/>
+        <Raster id="1B" palette="0" src="SadStep2.png"/>
+        <Raster id="1C" palette="0" src="SadStep3.png"/>
+        <Raster id="1D" palette="0" src="SadTalk2.png"/>
+        <Raster id="1E" palette="0" src="SadTalk3.png"/>
+        <Raster id="1F" palette="0" src="LookUpTalk2.png"/>
+        <Raster id="20" palette="1" src="Tear1.png"/>
+        <Raster id="21" palette="1" src="Tear2.png"/>
+        <Raster id="22" palette="0" src="Shock1.png"/>
+        <Raster id="23" palette="0" src="Shock2.png"/>
+    </RasterList>
+    <AnimationList>
+        <Animation name="Still">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="5"/>
+                <Wait duration="4"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="Idle">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="5"/>
+                <Wait duration="48"/>
+                <SetRaster index="6"/>
+                <Wait duration="4"/>
+                <SetRaster index="7"/>
+                <Wait duration="22"/>
+                <SetRaster index="6"/>
+                <Wait duration="4"/>
+                <SetRaster index="5"/>
+                <Wait duration="32"/>
+                <SetRaster index="6"/>
+                <Wait duration="4"/>
+                <SetRaster index="7"/>
+                <Wait duration="8"/>
+                <SetRaster index="6"/>
+                <Wait duration="4"/>
+                <SetRaster index="5"/>
+                <Wait duration="9"/>
+                <SetRaster index="6"/>
+                <Wait duration="4"/>
+                <SetRaster index="7"/>
+                <Wait duration="8"/>
+                <SetRaster index="6"/>
+                <Wait duration="4"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="SadIdle">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetPos flag="1" xyz="0,-3,0"/>
+                <Wait duration="48"/>
+                <SetPos flag="1" xyz="0,-1,0"/>
+                <Wait duration="4"/>
+                <SetPos flag="1" xyz="0,1,0"/>
+                <Wait duration="22"/>
+                <SetPos flag="1" xyz="0,-1,0"/>
+                <Wait duration="4"/>
+                <SetPos flag="1" xyz="0,-3,0"/>
+                <Wait duration="32"/>
+                <SetPos flag="1" xyz="0,-1,0"/>
+                <Wait duration="4"/>
+                <SetPos flag="1" xyz="0,1,0"/>
+                <Wait duration="8"/>
+                <SetPos flag="1" xyz="0,-1,0"/>
+                <Wait duration="4"/>
+                <SetPos flag="1" xyz="0,-3,0"/>
+                <Wait duration="8"/>
+                <SetPos flag="1" xyz="0,-1,0"/>
+                <Wait duration="4"/>
+                <SetPos flag="1" xyz="0,1,0"/>
+                <Wait duration="8"/>
+                <SetPos flag="1" xyz="0,-1,0"/>
+                <Wait duration="4"/>
+                <Goto dest="Start"/>
+            </Component>
+            <Component name="Comp_1" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="1B"/>
+                <Wait duration="48"/>
+                <SetRaster index="1D"/>
+                <Wait duration="4"/>
+                <SetRaster index="1E"/>
+                <Wait duration="22"/>
+                <SetRaster index="1D"/>
+                <Wait duration="4"/>
+                <SetRaster index="1B"/>
+                <Wait duration="32"/>
+                <SetRaster index="1D"/>
+                <Wait duration="4"/>
+                <SetRaster index="1E"/>
+                <Wait duration="8"/>
+                <SetRaster index="1D"/>
+                <Wait duration="4"/>
+                <SetRaster index="1B"/>
+                <Wait duration="8"/>
+                <SetRaster index="1D"/>
+                <Wait duration="4"/>
+                <SetRaster index="1E"/>
+                <Wait duration="8"/>
+                <SetRaster index="1D"/>
+                <Wait duration="4"/>
+                <Goto dest="Start"/>
+            </Component>
+            <Component name="Comp_2" xyz="10,14,2">
+                <Label name="Start"/>
+                <SetParent index="0"/>
+                <SetRaster index="20"/>
+                <Wait duration="30"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <SetRaster index="20"/>
+                <Wait duration="6"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <SetRaster index="20"/>
+                <Wait duration="70"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="LookUp">
+            <Component name="Comp_0" xyz="8,0,0">
+                <Label name="Start"/>
+                <SetRaster index="15"/>
+                <Wait duration="48"/>
+                <SetRaster index="16"/>
+                <Wait duration="2"/>
+                <SetRaster index="17"/>
+                <Wait duration="6"/>
+                <SetRaster index="16"/>
+                <Wait duration="2"/>
+                <SetRaster index="15"/>
+                <Wait duration="84"/>
+                <SetRaster index="16"/>
+                <Wait duration="2"/>
+                <SetRaster index="17"/>
+                <Wait duration="6"/>
+                <SetRaster index="16"/>
+                <Wait duration="2"/>
+                <SetRaster index="15"/>
+                <Wait duration="8"/>
+                <SetRaster index="16"/>
+                <Wait duration="2"/>
+                <SetRaster index="17"/>
+                <Wait duration="6"/>
+                <SetRaster index="16"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="Stand">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="5"/>
+                <Wait duration="80"/>
+                <SetRaster index="13"/>
+                <Wait duration="2"/>
+                <SetRaster index="14"/>
+                <Wait duration="6"/>
+                <SetRaster index="13"/>
+                <Wait duration="2"/>
+                <SetRaster index="5"/>
+                <Wait duration="150"/>
+                <SetRaster index="13"/>
+                <Wait duration="2"/>
+                <SetRaster index="14"/>
+                <Wait duration="6"/>
+                <SetRaster index="13"/>
+                <Wait duration="2"/>
+                <SetRaster index="5"/>
+                <Wait duration="8"/>
+                <SetRaster index="13"/>
+                <Wait duration="2"/>
+                <SetRaster index="14"/>
+                <Wait duration="6"/>
+                <SetRaster index="13"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="Walk">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="0"/>
+                <Wait duration="12"/>
+                <SetRaster index="1"/>
+                <Wait duration="2"/>
+                <SetRaster index="2"/>
+                <Wait duration="12"/>
+                <SetRaster index="1"/>
+                <Wait duration="6"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="SadWalk">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="1A"/>
+                <Wait duration="12"/>
+                <SetRaster index="1B"/>
+                <Wait duration="2"/>
+                <SetRaster index="1C"/>
+                <Wait duration="12"/>
+                <SetRaster index="1B"/>
+                <Wait duration="6"/>
+                <Goto dest="Start"/>
+            </Component>
+            <Component name="Comp_1" xyz="0,0,2">
+                <Label name="Start"/>
+                <SetParent index="2"/>
+                <SetRaster index="20"/>
+                <Wait duration="30"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <SetRaster index="20"/>
+                <Wait duration="6"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <SetRaster index="20"/>
+                <Wait duration="70"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <Goto dest="Start"/>
+            </Component>
+            <Component name="Comp_2" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetPos flag="1" xyz="10,11,0"/>
+                <Wait duration="12"/>
+                <SetPos flag="1" xyz="9,11,0"/>
+                <Wait duration="2"/>
+                <SetPos flag="1" xyz="7,14,0"/>
+                <Wait duration="12"/>
+                <SetPos flag="1" xyz="9,11,0"/>
+                <Wait duration="6"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="Run">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="0"/>
+                <Wait duration="2"/>
+                <SetRaster index="1"/>
+                <Wait duration="2"/>
+                <SetRaster index="2"/>
+                <Wait duration="2"/>
+                <SetRaster index="1"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="SadRun">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="1A"/>
+                <Wait duration="2"/>
+                <SetRaster index="1B"/>
+                <Wait duration="2"/>
+                <SetRaster index="1C"/>
+                <Wait duration="2"/>
+                <SetRaster index="1B"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+            <Component name="Comp_1" xyz="0,0,2">
+                <Label name="Start"/>
+                <SetParent index="2"/>
+                <SetRaster index="20"/>
+                <Wait duration="30"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <SetRaster index="20"/>
+                <Wait duration="6"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <SetRaster index="20"/>
+                <Wait duration="70"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <Goto dest="Start"/>
+            </Component>
+            <Component name="Comp_2" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetPos flag="1" xyz="10,11,0"/>
+                <Wait duration="2"/>
+                <SetPos flag="1" xyz="9,11,0"/>
+                <Wait duration="2"/>
+                <SetPos flag="1" xyz="7,14,0"/>
+                <Wait duration="2"/>
+                <SetPos flag="1" xyz="9,11,0"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="JumpEyesClosed">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="4"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="Hurt">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="3"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="Talk">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="8"/>
+                <Wait duration="2"/>
+                <SetRaster index="9"/>
+                <Wait duration="6"/>
+                <SetRaster index="8"/>
+                <Wait duration="2"/>
+                <SetRaster index="5"/>
+                <Wait duration="6"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="SadTalk">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="19"/>
+                <Wait duration="6"/>
+                <SetRaster index="1D"/>
+                <Wait duration="2"/>
+                <SetRaster index="1E"/>
+                <Wait duration="6"/>
+                <SetRaster index="1D"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+            <Component name="Comp_1" xyz="0,0,2">
+                <Label name="Start"/>
+                <SetParent index="2"/>
+                <SetRaster index="20"/>
+                <Wait duration="30"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <SetRaster index="20"/>
+                <Wait duration="6"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <SetRaster index="20"/>
+                <Wait duration="70"/>
+                <SetRaster index="21"/>
+                <Wait duration="6"/>
+                <Goto dest="Start"/>
+            </Component>
+            <Component name="Comp_2" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetPos flag="1" xyz="9,11,0"/>
+                <Wait duration="6"/>
+                <SetPos flag="1" xyz="9,12,0"/>
+                <Wait duration="2"/>
+                <SetPos flag="1" xyz="9,14,0"/>
+                <Wait duration="6"/>
+                <SetPos flag="1" xyz="9,12,0"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="LookUpTalk">
+            <Component name="Comp_0" xyz="8,0,0">
+                <Label name="Start"/>
+                <SetRaster index="15"/>
+                <Wait duration="6"/>
+                <SetRaster index="18"/>
+                <Wait duration="2"/>
+                <SetRaster index="1F"/>
+                <Wait duration="6"/>
+                <SetRaster index="18"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="Celebrate">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="C"/>
+                <Wait duration="4"/>
+                <SetRaster index="D"/>
+                <Wait duration="4"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="LeanOver">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="2"/>
+                <Wait duration="2"/>
+                <SetRaster index="10"/>
+                <Wait duration="2"/>
+                <SetRaster index="F"/>
+                <Wait duration="2"/>
+                <SetRaster index="E"/>
+                <Wait duration="6"/>
+                <SetRaster index="F"/>
+                <Wait duration="4"/>
+                <Label name="Pos_10"/>
+                <SetRaster index="E"/>
+                <Wait duration="2"/>
+                <Goto dest="Pos_10"/>
+            </Component>
+        </Animation>
+        <Animation name="Inspect">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetPos flag="1" xyz="-1,0,0"/>
+                <SetRaster index="11"/>
+                <Wait duration="4"/>
+                <Label name="Pos_6"/>
+                <SetPos flag="1" xyz="-1,0,0"/>
+                <SetRaster index="12"/>
+                <Wait duration="2"/>
+                <Goto dest="Pos_6"/>
+            </Component>
+        </Animation>
+        <Animation name="Shock">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="22"/>
+                <Wait duration="4"/>
+                <SetRaster index="23"/>
+                <Wait duration="4"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="Jump">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="A"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+        <Animation name="Fall">
+            <Component name="Comp_0" xyz="0,0,0">
+                <Label name="Start"/>
+                <SetRaster index="B"/>
+                <Wait duration="2"/>
+                <Goto dest="Start"/>
+            </Component>
+        </Animation>
+    </AnimationList>
+</SpriteSheet>
